@@ -3,7 +3,7 @@
 require_once 'framework/Model.php';
 
 /**
- * Fournit les services d'accès aux billets du blog 
+ * Fournit les services d'accès aux établissements 
  * 
  */
 class Etablissement extends Model {
@@ -34,9 +34,9 @@ class Etablissement extends Model {
     }
 
     /**
-     * Enregistrernvoie le nombre total de billets
+     * Enregistrernvoie le nombre total d'établissements
      * 
-     * @return int Le nombre de billets
+     * @return int Le nombre d'etablissements
      */
     public function EnregistrerEtablissement()
     {

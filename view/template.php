@@ -15,9 +15,9 @@
             <div id="content">
                 <?= $content ?>
             </div> <!-- #content -->
-            <footer id="blogFooter">
+            <!--<footer id="blogFooter">
                 Projet réalisé avec PHP, HTML5 et CSS.
-            </footer>
+            </footer>-->
         </div> <!-- #global -->
     </body>
 </html>

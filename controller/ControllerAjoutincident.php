@@ -2,29 +2,29 @@
 
 require_once 'framework/Controller.php';
 //require_once 'model/Dummy.php';
-require_once 'model/Incident.php';
+require_once 'model/Ajoutincident.php';
 
 /**
  * Contrôleur des actions liées à l'incident
  *
  */
 //class ControllerHome extends Controller {
-class ControllerIncident extends Controller {
+class ControllerAjoutincident extends Controller {
 
-    private $incident;
+    private $ajoutincident;
 
     /**
      * Constructeur 
      */
     public function __construct() {
-        $this->incident = new Incident();
+        $this->ajoutincident = new Ajoutincident();
     }
 
     // Affiche les détails sur l'incident
     public function liste() {
         
-        $incidents = $this->incident->getIncidents();
-        $this->generateView(array('incidents' => $incidents));
+        $ajoutincidents = $this->ajoutincident->getAjoutincidents();
+        $this->generateView(array('ajoutincidents' => $ajoutincidents));
     }
     
     public function index() {}
