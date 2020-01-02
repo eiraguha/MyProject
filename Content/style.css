@@ -1,0 +1,98 @@
+/* Pour pouvoir utiliser une hauteur (height) ou une hauteur minimale
+   (min-height) sur un bloc, il faut que son parent direct ait lui-même une
+   hauteur déterminée (donc toute valeur de height sauf "auto": hauteur en
+   pixels, em, autres unités...).
+   Si la hauteur du parent est en pourcentage, elle se réfère alors à la
+   hauteur du «grand-père», et ainsi de suite.
+   Pour pouvoir utiliser un "min-height: 100%" sur div#global, il nous faut:
+   - un parent (body) en "height: 100%";
+   - le parent de body également en "height: 100%". */
+html, body {
+    height: 100%;
+}
+
+/* Définir le style du corps de la vue */
+body {
+    /*color: #bfbfbf;*/
+    color: black;
+    background-color: white;
+    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;    
+}
+
+/* Mettre le titre de la vue templates en Bleu */
+/* Définir la taille de la police d'entête , couleur de fond , entourage et bordure */
+h1, h2 {
+    color: Blue;
+    height:50%;
+    font-size:15px;
+   	padding: 20px;
+	border: 5px solid #ccc;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	
+}
+/* Définir le fond de la couleur de fond du titre. Bleu ciel dans ce cas */
+h3{
+background-color:skyblue;
+text-align:center;
+margin:auto;
+}
+
+.postTitle {
+    margin-bottom : 0px;
+}
+
+#global {
+    min-height: 100%;  /* Voir commentaire sur html et body plus haut */
+    background-color: white;
+    width: 70%;
+    margin: auto;	/* Permet de centrer la div */
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+#content {
+    margin-bottom : 50px;
+}
+
+/* Centrer le tableau de la vue */
+table {
+margin:auto;
+}
+
+/* Centrer le bas de page de la vue */
+
+#blogTitle, #blogFooter {
+    text-align: center;
+}
+
+#answerTitle {
+    font-size : 100%;
+}
+
+#txtComment {
+    width: 50%;
+}
+
+#decoLink {
+    /*color: #bfbfbf;*/
+    color: black;
+    margin: auto;
+
+}
+/* Définir le style du bas de page de la vue */
+footer{
+    Color:Blue;
+    height:30%;
+    font-size:15px;
+   	padding: 20px;
+	border: 5px solid #ccc;
+	background-color: #f2f2f2;
+	border-radius: 25px;
+	
+}
+/* Centrer et définir la couleur de fond des entêtes du tableau des vues */
+thead {
+text-align:center;
+background-color:lightgrey;
+}
